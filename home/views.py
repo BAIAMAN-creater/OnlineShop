@@ -3,4 +3,7 @@ from django.http import  HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('<h4>Test</h4>')
+    return render(request, 'home/index.html')
+
+def notindex(request):
+    return render(request, 'home/notindex.html')
